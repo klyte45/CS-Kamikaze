@@ -1,6 +1,6 @@
 ﻿using ColossalFramework.PlatformServices;
 using ColossalFramework.UI;
-using ElectricRoads;
+using Kamikaze;
 using Kwytto.Interfaces;
 using Kwytto.LiteUI;
 using Kwytto.Utils;
@@ -11,11 +11,11 @@ using System.Reflection;
 using UnityEngine;
 
 [assembly: AssemblyVersion("0.0.0.0")]
-namespace ElectricRoads
+namespace Kamikaze
 {
     public class ModInstance : BasicIUserMod<ModInstance, MainController>
     {
-        public override string SimpleName { get; } = "Compatibility Report - ending";
+        public override string SimpleName { get; } = "Fine Road Anarchy - ending";
 
         public override string Description { get; } = "Remove it!";
 
@@ -23,7 +23,7 @@ namespace ElectricRoads
 
         private static readonly Dictionary<ulong, string> ModsToReplace = new Dictionary<ulong, string>
         {
-            [2881031511L] = "Compatibility Report v2"
+            [2862881785L] = "Network Anarchy"
         };
 
         public new void OnEnabled()
@@ -100,7 +100,7 @@ namespace Kwytto
         public static string Version => ModInstance.Version;
         public static string FullVersion => ModInstance.FullVersion;
         public static string ModName => ModInstance.Instance.SimpleName;
-        public static string Acronym { get; } = "CHM_CR";
+        public static string Acronym { get; } = "FRA";
         public static string ModRootFolder => "";
         public static string ModIcon => ModInstance.Instance.IconName;
         public static string ModDllRootFolder => ModInstance.RootFolder;
