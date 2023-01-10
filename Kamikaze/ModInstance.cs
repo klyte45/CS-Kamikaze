@@ -15,7 +15,7 @@ namespace ElectricRoads
 {
     public class ModInstance : BasicIUserMod<ModInstance, MainController>
     {
-        public override string SimpleName { get; } = "Touch This Tool! - ending";
+        public override string SimpleName { get; } = "Compatibility Report - ending";
 
         public override string Description { get; } = "Remove it!";
 
@@ -23,7 +23,7 @@ namespace ElectricRoads
 
         private static readonly Dictionary<ulong, string> ModsToReplace = new Dictionary<ulong, string>
         {
-            [2629141193L] = "Upgrade Untouchable"
+            [2881031511L] = "Compatibility Report v2"
         };
 
         public new void OnEnabled()
@@ -100,7 +100,7 @@ namespace Kwytto
         public static string Version => ModInstance.Version;
         public static string FullVersion => ModInstance.FullVersion;
         public static string ModName => ModInstance.Instance.SimpleName;
-        public static string Acronym { get; } = "TTT";
+        public static string Acronym { get; } = "CHM_CR";
         public static string ModRootFolder => "";
         public static string ModIcon => ModInstance.Instance.IconName;
         public static string ModDllRootFolder => ModInstance.RootFolder;
@@ -110,7 +110,7 @@ namespace Kwytto
         internal static readonly string[] AssetExtraDirectoryNames = new string[0];
         internal static readonly string[] AssetExtraFileNames = new string[] { };
 
-        public static Color ModColor { get; } = ColorExtensions.FromRGB("9753a6");
+        public static Color ModColor { get; } = ColorExtensions.FromRGB("888888");
         public static float UIScale { get; } = 1f;
     }
 }
